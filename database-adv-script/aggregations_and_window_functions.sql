@@ -41,5 +41,9 @@ SELECT
   PARTITION BY p.location
   ORDER BY bookings_count DESC
   )                AS rank_by_bookings
+  ROW_NUMBER() OVER (
+  PARTITION BY p.location
+  ORDER BY bookings_count DESC
+)
 FROM
   booking_counts;
