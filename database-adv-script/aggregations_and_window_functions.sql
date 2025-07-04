@@ -38,7 +38,8 @@ SELECT
   title,
   bookings_count,
   ROW_NUMBER() OVER (
-    ORDER BY bookings_count DESC
+  PARTITION BY p.location
+  ORDER BY bookings_count DESC
   )                AS rank_by_bookings
 FROM
   booking_counts;
