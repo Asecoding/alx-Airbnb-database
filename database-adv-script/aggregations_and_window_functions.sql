@@ -37,7 +37,7 @@ SELECT
   property_id,
   title,
   bookings_count,
-  ROW_NUMBER() OVER (
+  RANK() OVER (
   PARTITION BY p.location
   ORDER BY bookings_count DESC
   )                AS rank_by_bookings
