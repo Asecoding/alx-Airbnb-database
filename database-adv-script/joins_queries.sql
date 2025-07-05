@@ -29,6 +29,7 @@ FROM
 LEFT JOIN
   Reviews AS r
     ON p.id = r.property_id;
+ORDER BY p.property_id;
 
 --- FULL OUTER JOIN: All Users and All Bookings
 
