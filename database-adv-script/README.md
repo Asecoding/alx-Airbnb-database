@@ -19,7 +19,8 @@ Write complex queries involving joins, subqueries, and aggregations for data ret
 4. Monitor and Refine Performance: Continuously monitor database health and refine schemas and queries for optimal performance.
    
 5. Think Like a DBA: Learn to make data-driven decisions about schema design and optimization strategies for high-volume applications.
-Requirements
+
+## Requirements
 
 To successfully complete this project, learners must:
 
